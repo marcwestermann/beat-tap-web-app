@@ -1,0 +1,7 @@
+{
+  "name": "beat-tap",
+  "short_name": "beat-tap",
+  "description": "A BPM Counter application as a PWA.",
+  "start_url": "/",
+  "display": "standalone"
+}
