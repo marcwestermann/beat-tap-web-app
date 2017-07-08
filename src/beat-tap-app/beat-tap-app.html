@@ -1,5 +1,5 @@
 <link rel="import" href="../../bower_components/polymer/polymer-element.html">
-<link rel="import" href="../../bower_components/iron-icon/iron-icon.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
 <link rel="import" href="../../bower_components/paper-fab/paper-fab.html">
 
 <dom-module id="beat-tap-app">
@@ -8,9 +8,12 @@
       :host {
         display: block;
       }
+      paper-fab {
+        --paper-fab-keyboard-focus-background: var(--accent-color);
+      }
     </style>
-    <h2>Hello [[prop1]]!</h2>
-    <paper-fab icon="add"></paper-fab>
+    <p>tapped [[tapCount]] times</p>
+    <paper-fab on-keypress="handleTap" icon="touch-app" label="Tap the beat!" title="Tap the beat!" on-tap="handleTap"></paper-fab>
   </template>
 
   <script>
@@ -22,11 +25,15 @@
       static get is() { return 'beat-tap-app'; }
       static get properties() {
         return {
-          prop1: {
-            type: String,
-            value: 'beat-tap-app'
+          tapCount: {
+            type: Number,
+            value: 0
           }
         };
+      }
+
+      handleTap() {
+        this.tapCount++;
       }
     }
 

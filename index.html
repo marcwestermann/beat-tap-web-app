@@ -11,7 +11,7 @@
     <link rel="manifest" href="/manifest.json">
 
     <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="import" href="/src/beat-tap-app/beat-tap-app.html">
   </head>
   <body>
@@ -19,8 +19,18 @@
   </body>
 
   <style>
+  html {
+    --primary-color: var(--paper-blue-grey-800);
+    --accent-color: var(--paper-green-a200);
+
+    --primary-background-color: var(--primary-color);
+    --primary-text-color: rgba(255, 255, 255, 0.87);
+  }
+
     body {
-      background-color: #475962;
+      background-color: var(--primary-color);
+      color: var(--primary-text-color);
+      font-family: 'Roboto-light', sans-serif;
     }
   </style>
 </html>
