@@ -11,12 +11,26 @@
     <!-- See https://goo.gl/OOhYW5 -->
     <link rel="manifest" href="manifest.json">
 
+    <!-- Older Chrome configuration -->
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="beat-tap">
+<link rel="icon"
+      sizes="192x192"
+      href="resources/launcher-icon-4x.png">
+
     <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
     <link rel="import" href="bower_components/platinum-sw/platinum-sw-elements.html">
+    <link rel="import" href="bower_components/paper-toast/paper-toast.html">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="import" href="/src/beat-tap-app/beat-tap-app.html">
   </head>
   <body>
+    <paper-toast id="caching-complete"
+             duration="4000"
+             text="Caching complete! This app will work offline."
+             opened>
+    </paper-toast>
+
     <platinum-sw-register
         auto-register
         skip-waiting
