@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
 
     <title>beat-tap</title>
     <meta name="description" content="A BPM Counter application as a PWA.">
@@ -12,17 +12,31 @@
     <link rel="manifest" href="manifest.json">
 
     <!-- Older Chrome configuration -->
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="application-name" content="beat-tap">
-<link rel="icon"
-      sizes="192x192"
-      href="resources/launcher-icon-4x.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="beat-tap">
+    <link rel="icon"
+          sizes="192x192"
+          href="resources/launcher-icon-4x.png">
+
+    <!-- iOS configuration -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="beat-tap">
+
+    <link rel='apple-touch-icon' sizes='76x76' href='/resources/apple-icon-1-1x.png'>
+    <link rel='apple-touch-icon' sizes='152x152' href='/resources/apple-icon-1-2x.png'>
+    <link rel='apple-touch-icon' sizes='120x120' href='/resources/apple-icon-2-2x.png'>
+    <link rel='apple-touch-icon' sizes='180x180' href='/resources/apple-icon-2-3x.png'>
+
 
     <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
     <link rel="import" href="bower_components/platinum-sw/platinum-sw-elements.html">
     <link rel="import" href="bower_components/paper-toast/paper-toast.html">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <link rel="import" href="/src/beat-tap-app/beat-tap-app.html">
+
+
   </head>
   <body>
     <paper-toast id="caching-complete"
@@ -59,6 +73,18 @@
       color: var(--primary-text-color);
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
+      -webkit-user-select: none;
+      -moz-user-select: -moz-none;
+      -ms-user-select: none;
+      user-select: none;
     }
   </style>
+  <script type="text/javascript">
+  document.addEventListener('touchmove', function(event) {
+ event = event.originalEvent || event;
+ if(event.scale > 1) {
+   event.preventDefault();
+ }
+}, false);
+  </script>
 </html>
