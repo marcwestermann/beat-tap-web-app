@@ -1,0 +1,42 @@
+{
+  "name": "beat-tap",
+  "short_name": "beat-tap",
+  "description": "A BPM Counter application as a PWA.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#475962",
+  "theme_color": "#475962",
+  "icons": [
+    {
+      "src": "resources/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "resources/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "resources/launcher-icon-3x.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "resources/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "resources/splash-icon-1x.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "resources/splash-icon-2x.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    }
+  ]
+}

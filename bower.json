@@ -1,7 +1,7 @@
 {
   "name": "beat-tap",
   "description": "A BPM Counter application as a PWA.",
-  "main": "index.html",
+  "main": "public/index.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0",
     "paper-fab": "^2.0.0",
