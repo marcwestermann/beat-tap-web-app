@@ -1,0 +1,28 @@
+[debug] [2017-07-10T11:05:05.522Z] ----------------------------------------------------------------------
+[debug] [2017-07-10T11:05:05.526Z] Command:      /usr/local/Cellar/node/7.10.0/bin/node /usr/local/bin/firebase serve
+[debug] [2017-07-10T11:05:05.527Z] CLI Version:  3.9.1
+[debug] [2017-07-10T11:05:05.527Z] Platform:     darwin
+[debug] [2017-07-10T11:05:05.527Z] Node Version: v7.10.0
+[debug] [2017-07-10T11:05:05.528Z] Time:         Mon Jul 10 2017 13:05:05 GMT+0200 (CEST)
+[debug] [2017-07-10T11:05:05.528Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-10T11:05:05.546Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-10T11:05:05.546Z] > authorizing via signed-in user
+[debug] [2017-07-10T11:05:05.550Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/beat-tap  
+ Mon Jul 10 2017 13:05:05 GMT+0200 (CEST)
+[debug] [2017-07-10T11:05:06.511Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-10T11:05:06.514Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/beat-tap/tokens  
+ Mon Jul 10 2017 13:05:06 GMT+0200 (CEST)
+[debug] [2017-07-10T11:05:07.381Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/marc/Sites/beat-tap'...
+[info] 
+[debug] [2017-07-10T11:05:07.386Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/beat-tap  
+ Mon Jul 10 2017 13:05:07 GMT+0200 (CEST)
+[debug] [2017-07-10T11:05:08.443Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-10T11:05:08.444Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/504945308708/clients/_:getWebAppConfig  
+ Mon Jul 10 2017 13:05:08 GMT+0200 (CEST)
+[debug] [2017-07-10T11:05:09.058Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
