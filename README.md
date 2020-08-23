@@ -1,6 +1,6 @@
 # beat-tap web app
 
-A BPM Counter application built with Polymer.
+A small web app that identifies BPMs of a music track, rythm etc. by tapping to the beat.
 
 ## Install the Polymer-CLI
 
