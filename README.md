@@ -1,6 +1,6 @@
-# \<beat-tap\>
+# beat-tap web app
 
-A BPM Counter application as a PWA.
+A BPM Counter application built with Polymer.
 
 ## Install the Polymer-CLI
 
