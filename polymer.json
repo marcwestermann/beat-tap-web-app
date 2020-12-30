@@ -1,7 +1,26 @@
 {
+  "entrypoint": "public/index.html",
+  "shell": "public/src/beat-tap-app/beat-tap-app.html",
+  "fragments": [
+    "public/src/beat-tap-app/beat-tap-app.html"
+  ],
+  "sources": [
+    "public/src/**/*",
+    "public/resources/**/*",
+    "bower.json"
+  ],
+  "extraDependencies": [
+    "public/manifest.json",
+    "public/bower_components/webcomponentsjs/*.js"
+  ],
   "lint": {
     "rules": [
       "polymer-2"
     ]
-  }
+  },
+  "builds": [
+    {
+      "basePath": "public/"
+    }
+  ]
 }
